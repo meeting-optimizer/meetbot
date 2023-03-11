@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meet Bot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbar">
+        <header>
+            <div id="page_wrapper">
+            <nav>
+        <ul>
+            <li><a href="#">Meeting Optimizer</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            </li>
+        </ul>
+        </nav>
+        </header>
+    </div>
+    <div id="container">
+      <main>
+        <form class="grid">
+          <fieldset>
+            <legend><h2>GET STARTED </h2></legend>
+
+            <label for="cName"><b>First Name:</b></label
+            ><input type="text" name="cName" id="cName" />
+
+            <label for="cName"><b>Last Name:</b></label
+              ><input type="text" name="cName" id="cName" />
+
+              <label for="cName"><b>E-mail:</b></label
+                ><input type="text" name="cName" id="cName" />
+
+              </fieldset>
+              <input type="submit" value="Submit" class="btn" />
+        </form>
+      </main>
+    </div>
+</body>
+</html>
