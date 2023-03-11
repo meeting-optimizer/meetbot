@@ -1,7 +1,8 @@
-@media screen {
-    
-}
-
+@media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }
 body {
   margin-bottom: 60px;
   background-color: blanchedalmond;
@@ -26,12 +27,12 @@ nav ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    border-bottom: 3px solid #fff;
 }
 nav li a {
     font-family: cursive;
     font-size: 16px;
     text-decoration: none;
-    
 }
 a {
     color: #808080;
@@ -39,3 +40,17 @@ a {
 /* nav li a:hover {
     color: white;
 } */
+.text-into {
+    /* overflow-wrap: break-word;  */
+    /* word-break: break-all; */
+    inline-size: 70px;
+    /* overflow-wrap: break-word; */
+    hyphens: manual;
+    margin: 10px;
+
+    padding: 20px;
+    
+}
+#into-box {
+    
+}
