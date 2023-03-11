@@ -1,0 +1,59 @@
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+@media screen {
+    
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: blanchedalmond;
+}
+#page_wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+/* header {
+} */
+
+nav {
+    height: 48px;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav li a {
+    font-family: cursive;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+a {
+    color: #808080;
+}
+/* nav li a:hover {
+    color: white;
+} */
+
+/* Style for the container element AVS*/ 
+#container {
+	width: 25%;
+	margin: 0 auto;
+}
+/* Style rules for form elements */
+fieldset, input {border-style: hidden; margin-bottom: 2%;}
+legend {font-size: 1.25em; font-weight: bold;}
+label {display: block; padding-top: 3%;}
+.btn {border: none; margin: 0% auto; display: block; color: white;
+padding: 2%; background-color: hsl(128, 100%, 30%); font-size: 1.25em; border-radius: 10px;}
