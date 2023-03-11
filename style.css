@@ -1,0 +1,41 @@
+@media screen {
+    
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: blanchedalmond;
+}
+#page_wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+/* header {
+} */
+
+nav {
+    height: 48px;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav li a {
+    font-family: cursive;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+a {
+    color: #808080;
+}
+/* nav li a:hover {
+    color: white;
+} */
