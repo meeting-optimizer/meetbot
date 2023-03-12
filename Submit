@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meet Bot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="navbar">
+    <header>
+      <div id="page_wrapper">
+              <a href="index.html"><img src="logo.jpg" alt="logo" /></a>
+            <nav>
+              <ul>
+             <li><a href="about.html">About  </a></li>
+             <li><a href="#"> </a></li>
+             <li><a href="login.html">Login</a></li>
+              </ul>
+        </nav>
+        </header>
+        <div id="container">
+          <!-- Use the main area to add the main content of the webpage -->
+          <div id="container">
+          <main>
+            <form class="grid">
+              <fieldset>
+                <legend></legend>
+                <h1>Meeting Submitted</h1>
+                <h1>Makes Life</h1>
+                <h1>Easy</h1>
+                
+              </fieldset>
+
+              <fieldset>
+                <legend><b>GET STARTED</b></legend>
+                <label for="fName"> LOL</label>
+                <input type="text" name="fName" id="fName" />
+
+              </fieldset>
+            </form>
+            </div>
+          </main>
+    
+          <!-- Use the footer area to add webpage footer content -->
+          <footer>
+            <p>The Dream Team: Abraham, Sam, Rachelle, Yousef & Xin</p>
+          </footer>
+        </div>
+</body>
+</html>
