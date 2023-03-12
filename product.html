@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<div>
+    <style>
+      body{
+      background-color:rgb(118, 105, 105)
+      }
+    </style>
+    <div>
         <label for="input">Input Text:</label>
-        <textarea id="input"></textarea>
+        <textarea id="input"style="height: 382px; width: 570px;"></textarea>
       </div>
       <div>
         <button onclick="summarize()">Summarize</button>
@@ -17,19 +22,22 @@
         <div id="output"></div>
       </div>
       <script>
-        function summarize() {
-          const input = document.getElementById('input').value;
-          const url = `http://127.0.0.1:5000/summarize?data=${encodeURIComponent(input)}`;
-          
-          fetch(url)
-            .then(response => response.json())
-            .then(data => {
-              const summary = data.summary;
-              const output = document.getElementById('output');
-              output.innerHTML = summary;
-            })
-            .catch(error => console.error(error));
-        }
-      </script>
+         function summarize() {
+      const input = document.getElementById('input').value;
+      const url = `http://127.0.0.1:5000/summarize?data=${encodeURIComponent(input)}`;
+      
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          const summary = data.summary;
+          const output = document.getElementById('output');
+          output.innerHTML = summary;
+        })
+        .catch(error => console.error(error));
+    }   
+
+    
+        
+              </script>
 </body>
 </html>
