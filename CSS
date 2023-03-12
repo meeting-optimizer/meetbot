@@ -37,6 +37,7 @@ nav ul {
     list-style-type: none;
 }
 nav li a {
+    margin-right: 20px;
     font-weight: bold;
     font-family: cursive;
     font-size: 28px;
