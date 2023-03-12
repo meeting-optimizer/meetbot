@@ -1,2 +1,2 @@
-# meeting-optimizer-AI
-Comcast - Use AI to Make My Meeting More Efficient  Ever heard of the phrase "This meeting could have been an email?" This challenge seeks to do away with that norm and focus on how meetings can be made more efficient through the use of AI.
+# meetbot
+Meetbot was developed to help make meetings easier! We use AI technology to summarize emails and turn recorded audio from meetings into something digestible, saving you time and brain space.
