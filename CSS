@@ -1,0 +1,79 @@
+/* CSS Reset */
+body, main, footer, table, img {
+    margin: 0;
+    padding: 10;
+    border: 0;
+}
+@media screen {
+    
+}
+
+img {
+    max-width: 12%; display: block;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: blanchedalmond;
+}
+#page_wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+/* header {
+} */
+
+nav {
+    height: 48px;
+}
+
+nav ul {
+    justify-content: right;
+    display: flex;
+    list-style-type: none;
+}
+nav li a {
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 28px;
+    text-decoration: none;
+    
+}
+a {
+    color: #a1487c;
+}
+/* nav li a:hover {
+    color: white;
+} */
+
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin: 0 auto;
+    padding: 50px;
+}
+
+/* Style rules for form elements */
+fieldset, input {border-style: hidden; margin-bottom: 2%;}
+legend {font-size: 1.25em; font-weight: bold;}
+label {display: block; padding-top: 3%;}
+.btn {border: none; margin: 0% auto; display: block; color: white;
+padding: 2%; background-color: #006d00; font-size: 1.25em; border-radius: 10px;}
+
+/* Style for the footer element */
+footer {
+	font-size: .9em;
+	text-align: center;
+    padding: 50px;
+}
+
+/* Media query for tablet layout */ 
+@media only screen and (min-width: 600px) {
+form {width: 80%; margin: 0 auto;}
+.grid {display: grid; grid-template-columns: auto auto; grid-gap: 20px;}
+.btn {grid-column: 1/span 2; padding: 1%;}
+}
