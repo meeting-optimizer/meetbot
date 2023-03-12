@@ -6,7 +6,7 @@ import openai
 from flask_cors import CORS
 
 # protect your keys!!!!!
-openai.api_key = "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"
+openai.api_key = "sk-xxx"
 
 
 def summarize_text(text: str) -> str:
