@@ -1,11 +1,12 @@
-from flask import Flask, request, make_response
+from flask import Flask, request, make_response, jsonify
 from flask_restful import Resource, Api, reqparse
 import pandas as pd
 import logging as logging
 import openai
+from flask_cors import CORS
 
 # protect your keys!!!!!
-openai.api_key = "sk-xxx"
+openai.api_key = "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"
 
 
 def summarize_text(text: str) -> str:
@@ -32,6 +33,7 @@ def ask_me_anything(text: str) -> str:
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 
 class summarize(Resource):
@@ -40,10 +42,8 @@ class summarize(Resource):
         arguments = request.args
         arguments = arguments.to_dict(flat=False)
         text = str(arguments["data"][0])
-        data = summarize_text(text)
-        response = make_response(data, 200)
-        response.mimetype = "text/plain"
-        return response  # return data and 200 OK code
+        data = {"data": summarize_text(text)}
+        return jsonify(data)
 
 
 class random_question(Resource):
@@ -52,12 +52,8 @@ class random_question(Resource):
         arguments = request.args
         arguments = arguments.to_dict(flat=False)
         text = str(arguments["data"][0])
-        data = ask_me_anything(text)
-        response = make_response(data, 200)
-        response.mimetype = "text/plain"
-        return response  # return data and 200 OK code
-
-    pass
+        data = {"data": ask_me_anything(text)}
+        return jsonify(data)
 
 
 api.add_resource(summarize, "/summarize")
@@ -65,3 +61,4 @@ api.add_resource(random_question, "/question")
 
 if __name__ == "__main__":
     app.run()  # run our Flask app
+    app.use(cors())
