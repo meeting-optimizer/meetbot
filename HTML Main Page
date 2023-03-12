@@ -10,12 +10,12 @@
   <div class="navbar">
     <header>
       <div id="page_wrapper">
-              <img src="logo.jpg" alt="logo" />
+              <a href="index.html"><img src="logo.jpg" alt="logo" /></a>
             <nav>
               <ul>
-             <li><a href="#">About  </a></li>
+             <li><a href="about.html">About  </a></li>
              <li><a href="#"> </a></li>
-             <li><a href="#">Login</a></li>
+             <li><a href="login.html">Login</a></li>
               </ul>
         </nav>
         </header>
@@ -46,7 +46,7 @@
                 <label for="password"> Password</label>
                 <input type="password" name="password" id="password" />
 
-                <input type="submit" value="Submit" class="btn" />
+                <input type="submit" value="Submit" class="btn"/>
               </fieldset>
             </form>
             </div>
