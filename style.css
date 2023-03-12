@@ -1,8 +1,17 @@
-@media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-    }
-  }
+/* CSS Reset */
+body, main, footer, table, img {
+    margin: 0;
+    padding: 10;
+    border: 0;
+}
+@media screen {
+    
+}
+
+img {
+    max-width: 12%; display: block;
+}
+
 body {
   margin-bottom: 60px;
   background-color: blanchedalmond;
@@ -23,44 +32,73 @@ nav {
 }
 
 nav ul {
-    padding: 0;
+    justify-content: right;
     display: flex;
-    justify-content: space-between;
     list-style-type: none;
-    border-bottom: 3px solid #fff;
 }
 nav li a {
+    margin-right: 20px;
+    font-weight: bold;
     font-family: cursive;
-    font-size: 16px;
+    font-size: 28px;
     text-decoration: none;
+    
 }
 a {
-    color: #808080;
+    color: #a1487c;
 }
 /* nav li a:hover {
     color: white;
 } */
-.text-into {
-    /* overflow-wrap: break-word;  */
-    /* word-break: break-all; */
-    inline-size: 70px;
-    /* overflow-wrap: break-word; */
-    hyphens: manual;
-    margin: 10px;
 
-    padding: 20px;
-    
-}
-#into-box {
-    /* border: 1px solid black;
-  padding: 20px;
-  margin: 20px;
-  background-color: white; */
-  background-color: white;
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin: 0 auto;
+    padding: 50px;
 }
 
+/* Style rules for form elements */
+fieldset, input {border-style: hidden; margin-bottom: 2%;}
+legend {font-size: 1.25em; font-weight: bold;}
+label {display: block; padding-top: 3%;}
+.btn {border: none; margin: 0% auto; display: block; color: white;
+padding: 2%; background-color: #006d00; font-size: 1.25em; border-radius: 10px;}
 
-.summary-product {
-    background-color: #C8C8C8;
+/* Results Paragraph Box*/
+.result-box {
+    border: 0.5px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+/* Style for the footer element */
+footer {
+	font-size: .9em;
+	text-align: center;
+    padding: 50px;
 }
 
+.Input {
+    border: none; 
+    text-align: center;
+    width: 250px;
+    padding: 50px;
+    margin: auto;
+}
+
+.output {
+    border: 1px solid #ccc; 
+    width: 500px;
+    padding 10px;
+    margin: auto;
+
+}
+
+/* Media query for tablet layout */ 
+@media only screen and (min-width: 600px) {
+form {width: 80%; margin: 0 auto;}
+.grid {display: grid; grid-template-columns: auto auto; grid-gap: 20px;}
+.btn {grid-column: 1/span 2; padding: 1%;}
+}
