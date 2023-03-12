@@ -4,8 +4,8 @@ import pandas as pd
 import logging as logging
 import openai
 
-
-openai.api_key = "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"
+# protect your keys!!!!!
+openai.api_key = "sk-xxx"
 
 
 def summarize_text(text: str) -> str:
