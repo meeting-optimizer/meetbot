@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <header>
+            <div id="page_wrapper">
+                <nav>
+                    <ul>
+                        <li class="Meeting-optimizer"><a href="#">Meeting Optimizer</a></li>
+                        <li class="About"><a href="#">About</a></li>
+                        <li class="Login"><a href="#">Login</a></li>
+                        <!-- Add the clickable dropdown button here -->
+                        <div class="dropdown">
+                            <button class="dropbtn"> Language</button>
+                            <div class="dropdown-content">
+                              <a href="index.html" onclick="changeLanguage('English')">English</a>
+                              <a href="ChineseIndex.html" onclick="changeLanguage('中文')">中文</a>
+                              <a href="SpanishIndex.html" onclick="changeLanguage('Español')">Español</a>
+                              <a href="FrenchIndex.html" onclick="changeLanguage('français')">français</a>
+
+                            </div>
+                          </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!--You will be using this div underneath for the form -->
+    <div id="into-box">
+        <h2 class="text-into" style="font-size: 50px;">The AI meeting that makes life easy</h2>
+
+    </div>
+    <!-- Add the JavaScript code for the clickable dropdown here -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.dropbtn').addEventListener('click', function() {
+                document.querySelector('.dropdown-content').classList.toggle('show');
+            });
+        });
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName('dropdown-content');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+
+    </script>
