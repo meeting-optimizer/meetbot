@@ -6,29 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
-    <style>
-      body{
-      background-color:rgb(118, 105, 105)
-      }
-    </style>
-    <div>
-      <label for="input">Input Text:</label>
+    
+    <div class=" Input">
+      <label for="input"><b>Insert your body of the e-mail:</b></label>
       <input type="text" id="input">
         <!-- <label for="input">Input Text:</label>
         <textarea id="input">War and Peace</textarea> -->
       </div>
-      <div>
+      <div class="Input">
         <button type="button" onclick="summarize()">Summarize</button>
       </div>
-      <div>
-        <label for="output">Output Summary:</label>
+      <div class="output">
+        <label for="output"><b>Output Summary:</b></label>
         <div id="output"></div>
       </div>
       <script>
          function summarize() {
           const input = document.getElementById('input').value;
           const url = `http://127.0.0.1:5000/summarize?data=${encodeURIComponent(input)}`;
-          
+
           fetch(url)
             .then(response => response.json())
             .then(data => {
@@ -39,8 +35,8 @@
             .catch(error => console.error(error));
     }   
 
-    
-        
+
+
               </script>
 </body>
 </html>
