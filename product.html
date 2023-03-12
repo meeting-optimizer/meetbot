@@ -17,6 +17,18 @@
     <label for="output">the summary</label>
     <input type="text" class="output" placeholder="summary">
 
+    <script>
+        fetch('http://127.0.0.1:5000/summarize?data=')
+  .then(response => response.json())
+  .then(data => {
+    // Do something with the data
+    console.log(data);
+    // For example, display it on the page
+    const output = document.getElementById('output');
+    output.innerHTML = JSON.stringify(data);
+  })
+  .catch(error => console.error(error));
+    </script>
 
 </body>
 </html>
